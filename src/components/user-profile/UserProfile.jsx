@@ -23,7 +23,9 @@ const UserProfile = ({
       <div className='profile-info'>
         <h2>{name}</h2>
         <p>{bio}</p>
-        <button onClick={toggleEmail}>Show Email</button>
+        <button onClick={toggleEmail}>
+          {showEmail ? 'Hide Email' : 'Show Email'}
+        </button>
         <p>{showEmail ? 'Email: ' + email : '\u00A0'}</p>
       </div>
     </div>
